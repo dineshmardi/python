@@ -62,15 +62,16 @@ seq
 type(seq)
 
 #pass that is null statement
-while(true): #this need some codeblocks inside loop
+while(True): #this need some codeblocks inside loop
+    pass
 
-print("hello")
+# print("hello")
 
 
 #if we dont want to o anying inside code than w just use PASS statement inside loop
 
 
-while(true):
+while(True):
     pass#placeholder for future used
 print("hello")
 
