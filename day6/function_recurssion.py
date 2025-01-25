@@ -7,8 +7,49 @@ def cal(a,b): #we defining how it will work
     return sum
 
 cal(3,4)
-cal(23.4,909)
+print(cal(23.4,909))
+
+def hello():
+    print("hello")
+
+hello()#if not return than it return none
 
 
+# average function
+def avg_fun(a,b,c):
+    return (a+b+c)/3
+
+avg_fun(2,3,4)
 
 
+#making default valuess
+def avg_fun(a,b,c):
+    return (a+b+c)/3
+
+avg_fun()#gives error beacause of argument
+
+def avg_fun(a=1,b=1,c=1):
+    return (a+b+c)/3
+
+avg_fun()#given default value if argument is not passed
+
+#problems-----
+# write a function to print the length of a list 
+def fu_len(l):
+    return len(l)
+
+a=[1,2,3,4,5]
+len(a)
+
+fu_len(a)
+
+# write a function to print the element of a list in a single line.(list as parameter)
+
+def no_list(l):
+    i=0
+    while(i<len(l)):
+        print(l[i])
+        i+=1
+
+
+no_list(a)
