@@ -56,12 +56,12 @@ no_list(a)
 
 
 def facto(n):
-    if(n==1):
+    if(n==1 or n==0):
         return 1
     else:
          return n*facto(n-1)
 
-facto(4)
+facto(12)
 
 
 def usd_inr(n):
@@ -91,4 +91,28 @@ def show(n):
     show(n-1)
 
 show(9)
+
+#write a function to calculate thew sum of first n natural numbers
+def summ(n):
+    if(n==1):
+        return 1
+    else:
+        return n+summ(n-1)
+
+summ(3)
+
+#write a function that call the list element recursively
+
+
+# l=[1,2,3,4,5]
+
+# def shh(l,n):
+#     if(n==0):
+#         return 1
+#     else:
+#         print(l[n])
+#         return l[n-1]
+
+# shh(l,3)
+
 
