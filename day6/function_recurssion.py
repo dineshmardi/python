@@ -48,8 +48,47 @@ fu_len(a)
 def no_list(l):
     i=0
     while(i<len(l)):
-        print(l[i])
+        print(l[i],end=" ")
         i+=1
 
 
 no_list(a)
+
+
+def facto(n):
+    if(n==1):
+        return 1
+    else:
+         return n*facto(n-1)
+
+facto(4)
+
+
+def usd_inr(n):
+
+    inr=n*83
+    return inr
+
+print("usd in rupees:",usd_inr(23))
+
+#even odd function
+
+def even_odd(n):
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+
+even_odd(4)
+even_odd(9)
+
+#recursion----
+
+def show(n):
+    if n==0:#base case
+        return
+    print(n)
+    show(n-1)
+
+show(9)
+
