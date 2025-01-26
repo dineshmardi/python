@@ -45,3 +45,95 @@ class hood:
 
 b=hood("dinesh","vikes")
 print(b.gam)
+
+class hero:
+    def __init__(self,a):
+        self.hero=a
+h=hero("krish")
+h.hero
+
+#method or functioninside class
+
+class hero:
+    def __init__(self,a):
+        self.hero=a
+
+    def welcome(self):
+        print("hello")
+h=hero("krish")
+h.hero
+h.welcome()
+
+
+#class that take input as argument and give average of that input 
+
+class student:
+    def __init__(self,name,marks1,marks2,marks3):
+        self.name=name
+        self.marks1=marks1
+        self.marks2=marks2
+        self.marks3=marks3
+  
+    def average(self):
+        avg=(self.marks1+self.marks2+self.marks3)/3
+        return avg
+    
+s=student("dinesh",78,90,65)
+
+print(s.average())
+
+#or
+
+
+class student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+      
+    def average(self):
+       self.sum=0
+       for i in self.marks:
+           self.sum+=i
+           
+s=student("dinesh",[12,34,53])
+s.average()
+print("average=",s.sum/3)
+
+
+
+
+class car:
+    def __init__(self):
+        self.acc=False
+        self.brk=True
+        self.clutch=False
+        
+    def start(self):
+        self.clutch=True
+        self.acc=True
+        print("startedd....")
+        
+car1=car()
+car1.start()
+        
+           
+class amount:
+    def __init__(self):
+        self.balance=10000
+        self.account_no=987865
+    def credit(self,money):
+        self.balance+=money
+        print(money," credeted to you ....available balance=",self.balance)
+    def debit(self,income):
+        pa=int(input("enter account number="))
+        if pa==self.account_no: 
+            self.balance-=income
+            print(income,"got debited from your account..available balance=",self.balance)
+        else:
+            pass
+        
+a=amount()
+a.credit(100)
+a.debit(1266)
+
+
